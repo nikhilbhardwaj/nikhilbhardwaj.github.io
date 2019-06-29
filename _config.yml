@@ -18,14 +18,15 @@ email: root@nikhilbhardwaj.in
 description: >- # this means to ignore newlines until "baseurl:"
   The online journal of Nikhil Bhardwaj. Collection of thoughts, articles, essays.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.nikhilbhardwaj.in" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  nikhilbhardwaj
+github: [metadata]
+remote_theme: broccolini/swiss
+theme_color: orange
+repository: nikhilbhardwaj/nikhilbhardwaj.github.io
 
 # Build settings
 markdown: kramdown
-remote_theme: broccolini/swiss
-theme_color: orange
-repository: hello/hello
 plugins:
   - jekyll-feed
 
