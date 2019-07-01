@@ -11,11 +11,11 @@ categories:
   - tech tips
   - ubuntu
 ---
-In the past whenever I had to install linux along with windows I would install grub and it works flawlessly most of the time. Sometimes however when you&#8217;re experimenting with something unusual, it is handy to know how to load linux using the windows bootloader. I used it when I was transferring my ubuntu installation from my laptop to my netbook.
+In the past whenever I had to install linux along with windows I would install grub and it works flawlessly most of the time. Sometimes however when you're experimenting with something unusual, it is handy to know how to load linux using the windows bootloader. I used it when I was transferring my ubuntu installation from my laptop to my netbook.
 <!--more-->
 
 
-By default grub is installed to the MBR, it overwrites the windows bootloader. On one hard disk there can only be one bootloader that resides in the MBR, the trick is to install grub to a partition, then make an image of that and use it to boot into linux. It sounds slightly tricky so I&#8217;ve mentioned the exact steps.
+By default grub is installed to the MBR, it overwrites the windows bootloader. On one hard disk there can only be one bootloader that resides in the MBR, the trick is to install grub to a partition, then make an image of that and use it to boot into linux. It sounds slightly tricky so I've mentioned the exact steps.
 
 First we need to install grub to a partition, this can be done by
 

@@ -10,7 +10,7 @@ categories:
   - Linux
   - tech tips
 ---
-I switched to ubuntu after the new LTS release and was having some problems with my MTS Mblaze connection. Sometime&#8217;s it&#8217;d work and sometimes it wouldn&#8217;t. There seems to be a bug in modem-manager which constantly keeps crashing so I decided to use wvdial instead. We need to install the wvdial package
+I switched to ubuntu after the new LTS release and was having some problems with my MTS Mblaze connection. Sometime's it'd work and sometimes it wouldn't. There seems to be a bug in modem-manager which constantly keeps crashing so I decided to use wvdial instead. We need to install the wvdial package
 
 <pre>sudo apt-get install wvdial</pre>
 

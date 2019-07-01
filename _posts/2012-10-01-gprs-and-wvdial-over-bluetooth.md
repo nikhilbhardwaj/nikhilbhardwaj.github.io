@@ -10,7 +10,7 @@ categories:
   - Linux
   - tech tips
 ---
-I must say that the network manager handles ppp connections rather poorly, sometimes they work but most of the times they don&#8217;t. The situation is worse still with mobile phones, I have a nokia series 40 mobile phone and when my mts subscription expires, I need to use it for a couple of days. I&#8217;ll walk you through the steps that allowed me to connect to the internet using my tata docomo gprs connection over bluetooth.
+I must say that the network manager handles ppp connections rather poorly, sometimes they work but most of the times they don't. The situation is worse still with mobile phones, I have a nokia series 40 mobile phone and when my mts subscription expires, I need to use it for a couple of days. I'll walk you through the steps that allowed me to connect to the internet using my tata docomo gprs connection over bluetooth.
 
 <!--more-->Before getting started, your gprs should be configured on the mobile device, i.e. you should be able to access internet on that. This typically requires you to set up the correct access point for tata docomo 2G connections it is tata.docomo.internet, you can get this from your provider. Also switch on your bluetooth, the first thing we need is the device MAC address.
 
@@ -68,7 +68,7 @@ Username = PHONE_NO
 Password = anything
 </pre>
 
-You might need to replace the username with your phone no and the password can be anything, for prepaid connections they aren&#8217;t checked as far as I know. Now just dial this connection and you&#8217;ll be ready to roll!
+You might need to replace the username with your phone no and the password can be anything, for prepaid connections they aren't checked as far as I know. Now just dial this connection and you'll be ready to roll!
 
 <pre class="brush: plain; title: ; notranslate" title="">sudo wvdial nokia
 --&gt; WvDial: Internet dialer version 1.61
@@ -91,10 +91,10 @@ CONNECT
 
 </pre>
 
-Now for use subsequently you needn&#8217;t repeat all the steps, here are the two that you need to execute (you could make a shell script for this too also you&#8217;ll need to run them with root privileges)
+Now for use subsequently you needn't repeat all the steps, here are the two that you need to execute (you could make a shell script for this too also you'll need to run them with root privileges)
 
 <pre class="brush: plain; title: ; notranslate" title="">rfcomm bind 0 B0:5C:E5:48:5B:B4 1
 wvdial nokia
 </pre>
 
-And that&#8217;s how you can use your phone&#8217;s gprs/3G connection on linux. Let me know in the comments if you find this useful or have any queries.
+And that's how you can use your phone's gprs/3G connection on linux. Let me know in the comments if you find this useful or have any queries.

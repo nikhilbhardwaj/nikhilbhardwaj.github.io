@@ -18,6 +18,4 @@ You need to add a new HTTP tweak in the settings
 WMV
 </pre>
 
-<img class="alignnone" src="http://img715.imageshack.us/img715/2006/rmcbinaryoctetstream.png" alt="" width="528" height="558" />
-
-That&#8217;s it, now you can view these videos later whenever you want.
+That's it, now you can view these videos later whenever you want.

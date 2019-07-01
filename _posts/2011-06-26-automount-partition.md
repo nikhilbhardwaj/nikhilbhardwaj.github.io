@@ -13,7 +13,7 @@ tags:
   - fstab
   - linux
 ---
-I dual boot windows and linux and what happens is that most of my data resides on an ntfs volume which can be accessed by both the operating systems. It&#8217;s really simple to mount this volume, all that needs to be done is that you click it in the file manager and depending on your distro you may or may not be prompted for the administrator password. This system works well but its not very convenient. I generally configure my distro to automatically mount some partitions at boot up, that way i can easily create symbolic links  that span across volumes and make it easier to access files.<!--more-->
+I dual boot windows and linux and what happens is that most of my data resides on an ntfs volume which can be accessed by both the operating systems. It's really simple to mount this volume, all that needs to be done is that you click it in the file manager and depending on your distro you may or may not be prompted for the administrator password. This system works well but its not very convenient. I generally configure my distro to automatically mount some partitions at boot up, that way i can easily create symbolic links  that span across volumes and make it easier to access files.<!--more-->
 
 This is a relatively simple process, it requires the use of the shell and a text editor of your choice, I swear by <a href="http://www.vim.org" target="_blank">gvim</a> which is an improved version of the legendary <a href="http://en.wikipedia.org/wiki/Vi" target="_blank">vi</a> editor, I like it so much that i use it in windows too but with all things linux there is a steep learning curve with this so beginners would be better off using a more forgiving editor like <a href="http://www.nano-editor.org/" target="_blank">nano</a> or <a href="http://www.kde.org/applications/utilities/kwrite" target="_blank">kwrite</a>/<a href="http://www.gedit.org" target="_blank">gedit</a> depending on the desktop environment that you choose.
 
@@ -46,14 +46,14 @@ In my case I want to mount the partition named **/dev/sda5** . In case this is m
 lovelock ~ # mkdir /media/Data
 </pre>
 
-Now We&#8217;d want to be able to find out our user id and group id, this can be found out by
+Now We'd want to be able to find out our user id and group id, this can be found out by
 
 <pre class="brush: bash; title: ; notranslate" title="">lovelock ~ # grep nikhil /etc/passwd
 nikhil:x:1000:1001:nikhil bhardwaj:/home/nikhil:/bin/bash
 </pre>
 
 You can substitute nikhil with your won user name. With this we can see that the user id is 1000 and group id is 1001.
-Now we can add the entry for this partition in our <a href="http://linux.die.net/man/5/fstab" target="_blank">fstab</a>. Any text editor can be used for this. Do not change any of the existing data in the **/etc/fstab**. Add an entry as I&#8217;ve done below.
+Now we can add the entry for this partition in our <a href="http://linux.die.net/man/5/fstab" target="_blank">fstab</a>. Any text editor can be used for this. Do not change any of the existing data in the **/etc/fstab**. Add an entry as I've done below.
 
 <pre class="brush: bash; title: ; notranslate" title="">lovelock ~ # cat /etc/fstab
 # /etc/fstab
@@ -77,7 +77,7 @@ If we have invalid entries in the <a href="http://linux.die.net/man/5/fstab" tar
 <pre class="brush: bash; title: ; notranslate" title="">lovelock ~ # mount -a
 </pre>
 
-Voila! You are almost done, this will work fine but you&#8217;ll notice that the other lines start with a UUID. This is useful in case you have multiple hard disks on your computer. Even if the device name changes on the addition of new hardware the UUID remains constant.
+Voila! You are almost done, this will work fine but you'll notice that the other lines start with a UUID. This is useful in case you have multiple hard disks on your computer. Even if the device name changes on the addition of new hardware the UUID remains constant.
 Lets find out the UUID of the partition and make the final change to the <a href="http://linux.die.net/man/5/fstab" target="_blank">fstab</a>.
 
 <pre class="brush: bash; title: ; notranslate" title="">lovelock ~ # blkid
@@ -95,9 +95,9 @@ The new <a href="http://linux.die.net/man/5/fstab" target="_blank">fstab</a> lin
 UUID=74EC9395EC934FEA /media/Data ntfs-3g uid=1000,gid=1001,fmask=0111,dmask=0000 0  0
 </pre>
 
-That&#8217;s it for the auto mounting part.
+That's it for the auto mounting part.
 
-Let me demonstrate a use for it too. Here&#8217;s what I do.
+Let me demonstrate a use for it too. Here's what I do.
 
 <pre class="brush: bash; title: ; notranslate" title="">nikhil@lovelock ~ $ ln -s /media/Data/Music/
 nikhil@lovelock ~ $ ln -s /media/Data/Videos/
@@ -113,5 +113,5 @@ drwxr-xr-x 10 nikhil nikhil 4096 Jun 26 14:07 Sources
 lrwxrwxrwx  1 nikhil nikhil   19 Jun 26 14:51 Videos -&gt; /media/Data/Videos/
 </pre>
 
-This way I can access the Music and Videos as if they were inside my home drive itself. This is because symbolic links can span across various volumes whereas hard links can&#8217;t.
+This way I can access the Music and Videos as if they were inside my home drive itself. This is because symbolic links can span across various volumes whereas hard links can't.
 I hope you found it informative and useful.

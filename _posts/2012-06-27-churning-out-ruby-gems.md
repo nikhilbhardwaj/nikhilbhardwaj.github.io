@@ -10,7 +10,7 @@ categories:
   - Programming
   - tech tips
 ---
-If you didn&#8217;t already know then let me tell you that I&#8217;m a huge fan of the <a href="http://www.ruby-lang.org" target="_blank">ruby programming language</a>. I have dabbed with a few imperative languages and none can come close to ruby, it&#8217;s syntax is like sugar and libraries like alcohol. You get addicted to them once you start. I use gems (that&#8217;s the fancy name for ruby libraries) from time to time. They can be used in both programs that you write and some also provide a standalone binary. But that is hardly the fascinating part, what is fascinating is that how easy it is to create them. I just created one and will mention the steps briefly so that you are also inspired to try your hand at it.<!--more-->To create the initial directory structure and to initialize an empty git repository for our beloved gem we need just one command.
+If you didn't already know then let me tell you that I'm a huge fan of the <a href="http://www.ruby-lang.org" target="_blank">ruby programming language</a>. I have dabbed with a few imperative languages and none can come close to ruby, it's syntax is like sugar and libraries like alcohol. You get addicted to them once you start. I use gems (that's the fancy name for ruby libraries) from time to time. They can be used in both programs that you write and some also provide a standalone binary. But that is hardly the fascinating part, what is fascinating is that how easy it is to create them. I just created one and will mention the steps briefly so that you are also inspired to try your hand at it.<!--more-->To create the initial directory structure and to initialize an empty git repository for our beloved gem we need just one command.
 
 <pre class="brush: plain; title: ; notranslate" title="">bundle gem NittResults</pre>
 
@@ -25,6 +25,6 @@ and then publish it with
 
 <pre class="brush: plain; title: ; notranslate" title="">rake publish </pre>
 
-And that&#8217;s all that needs to be done.
+And that's all that needs to be done.
 
-I&#8217;ll briefly describe what <a title="Getting graphics.h to work on Windows and Linux" href="https://rubygems.org/gems/NittResults" target="_blank">my gem</a> does, it fetches the results of me and my classmates from our university website and stores everyone&#8217;s result in text files. This way I can go over them all at once without having to navigate through the clunky website that the university has. This gem is minimal and I have a few improvements planned, if this generates some interest then I&#8217;ll think about implementing them. I&#8217;ll surely be writing more gems in the due course of time let me know if you have written one after reading this.
+I'll briefly describe what <a title="Getting graphics.h to work on Windows and Linux" href="https://rubygems.org/gems/NittResults" target="_blank">my gem</a> does, it fetches the results of me and my classmates from our university website and stores everyone's result in text files. This way I can go over them all at once without having to navigate through the clunky website that the university has. This gem is minimal and I have a few improvements planned, if this generates some interest then I'll think about implementing them. I'll surely be writing more gems in the due course of time let me know if you have written one after reading this.

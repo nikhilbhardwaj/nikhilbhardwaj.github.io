@@ -14,9 +14,9 @@ tags:
   - iatkos
   - tilde
 ---
-I installed iAtkos L2 on my Acer 5742G laptop and it works really well, there was one thing that has been bugging me. I couldn&#8217;t press ~ on the keyboard and using the terminal was painful when it came to specifying paths relative to my home directory.
+I installed iAtkos L2 on my Acer 5742G laptop and it works really well, there was one thing that has been bugging me. I couldn't press ~ on the keyboard and using the terminal was painful when it came to specifying paths relative to my home directory.
 
-After some looking around I found this application <a href="https://github.com/tekezo/KeyRemap4MacBook" target="_blank">KeyRemap4MacBook</a>. As the name suggests it allows us to remap keys on the keyboard and assign them different functions. The problem I had was that I got <a href="http://en.wikipedia.org/wiki/Section_sign" target="_blank">§</a>** **instead of the usual backquote(\`). Here&#8217;s the relevant xml snippet that performs the desired conversion
+After some looking around I found this application <a href="https://github.com/tekezo/KeyRemap4MacBook" target="_blank">KeyRemap4MacBook</a>. As the name suggests it allows us to remap keys on the keyboard and assign them different functions. The problem I had was that I got <a href="http://en.wikipedia.org/wiki/Section_sign" target="_blank">§</a>** **instead of the usual backquote(\`). Here's the relevant xml snippet that performs the desired conversion
 
 <pre class="brush: plain; title: ; notranslate" title="">&lt;?xml version="1.0"?&gt;
 &lt;root&gt;
@@ -31,4 +31,4 @@ After some looking around I found this application <a href="https://github.com/t
 
 &nbsp;
 
-The best part about this is that it&#8217;s an open source project. I didn&#8217;t know about the keycodes and had problem finding the ones that I needed, so I asked by opening an <a href="https://github.com/tekezo/KeyRemap4MacBook/issues/82" target="_blank">issue on github </a>and the author took the time out to help me. I absolutely love the open source community. Hopefully this will help someone else who had a similar issue. This application can also be useful for those who have keyboards with multimedia keys that don&#8217;t work out of the box for hackintoshes.
+The best part about this is that it's an open source project. I didn't know about the keycodes and had problem finding the ones that I needed, so I asked by opening an <a href="https://github.com/tekezo/KeyRemap4MacBook/issues/82" target="_blank">issue on github </a>and the author took the time out to help me. I absolutely love the open source community. Hopefully this will help someone else who had a similar issue. This application can also be useful for those who have keyboards with multimedia keys that don't work out of the box for hackintoshes.

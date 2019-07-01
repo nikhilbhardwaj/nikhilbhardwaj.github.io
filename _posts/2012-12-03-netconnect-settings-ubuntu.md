@@ -11,7 +11,7 @@ categories:
   - tech tips
   - ubuntu
 ---
-I had written a post on how we can easily get MTS Mblaze to work under linux and as it turns out, the Reliance Netconnect+ is equally easy to set up and use. Instead of repeating the entire procedure which I have already mentioned here, I&#8217;ll just post the relevant wvdial configuration file. You need to add the following snippet to your /etc/wvdial.conf
+I had written a post on how we can easily get MTS Mblaze to work under linux and as it turns out, the Reliance Netconnect+ is equally easy to set up and use. Instead of repeating the entire procedure which I have already mentioned here, I'll just post the relevant wvdial configuration file. You need to add the following snippet to your /etc/wvdial.conf
 
 <pre>[Dialer netconnect]
 New PPPD = yes
@@ -32,7 +32,7 @@ It goes without saying that you need to replace the username and password with y
 
 <pre>sudo wvdial netconnect</pre>
 
-Here&#8217;s what I get
+Here's what I get
 
 <pre>➜  ~  sudo wvdial netconnect
 --> WvDial: Internet dialer version 1.61

@@ -14,7 +14,7 @@ tags:
   - linux
   - mysql
 ---
-I was setting up the LAMP stack on my arch linux installation, I followed the wonderful arch wiki and had no trouble getting apache and php working but there seems to be a problem with MySQL. It installs just fine but the daemon doesn&#8217;t start up.
+I was setting up the LAMP stack on my arch linux installation, I followed the wonderful arch wiki and had no trouble getting apache and php working but there seems to be a problem with MySQL. It installs just fine but the daemon doesn't start up.
 
 <pre class="brush: bash; title: ; notranslate" title="">lovelock# rc.d restart mysqld
 :: Stopping MySQL Server [FAIL]
@@ -22,7 +22,7 @@ I was setting up the LAMP stack on my arch linux installation, I followed the wo
 
 </pre>
 
-I tried fixing the ownership and permissions but didn&#8217;t have any success. I realized the cause of the problem after running mysqld_safe
+I tried fixing the ownership and permissions but didn't have any success. I realized the cause of the problem after running mysqld_safe
 
 <pre class="brush: bash; title: ; notranslate" title="">lovelock# /etc/rc.d/mysqld
 usage: /etc/rc.d/mysqld {start|stop|restart}
@@ -40,10 +40,10 @@ I installed hostname
 
 </pre>
 
-But that didn&#8217;t solve it either and I had to do this to fix it
+But that didn't solve it either and I had to do this to fix it
 
 <pre class="brush: bash; title: ; notranslate" title="">rm -rf /var/lib/mysql/*
 mysql_install_db --user=mysql --basedir=/usr
 </pre>
 
-This removes the databases and creates a new copy. For me it wasn&#8217;t an issue as this is a fresh install but you should be careful when upgrading mysql. Its always handy to back up the databases first.
+This removes the databases and creates a new copy. For me it wasn't an issue as this is a fresh install but you should be careful when upgrading mysql. Its always handy to back up the databases first.
