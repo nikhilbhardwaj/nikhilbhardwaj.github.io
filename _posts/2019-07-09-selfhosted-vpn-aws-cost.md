@@ -37,7 +37,7 @@ AWS offers multiple products and it is critically important to understand their 
 
 Here's my bill from the last month -
 
-<object data="/assets/uploads/2019/07/09/Aws-Bill-Jun2019.pdf" width="1000" height="1000" type='application/pdf' />
+<object data="/assets/uploads/2019/07/09/Aws-Bill-Jun2019.pdf" width="1000" height="1000" type='application/pdf'></object>
 
 Now you can see that it was costing me about $28 a month, this is split at about $5 for the monthly cost to run the server and the remainder for the 200GB data transfer costs. I have some alexa promotional credits that covered these costs but these costs are unacceptable when compared to the multiple VPN providers which provide servers in multiple regions and a much larger bandwidth allowance.
 
