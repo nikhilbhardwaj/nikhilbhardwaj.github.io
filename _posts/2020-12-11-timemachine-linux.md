@@ -1,7 +1,7 @@
 ---
 id: 1005
 title: Backup Strategy
-date: 2020-12-115T14:43:50-08:00
+date: 2020-12-11T14:43:50-08:00
 author: nikhil
 layout: post
 permalink: /2020/12/11/backup-strategy/
