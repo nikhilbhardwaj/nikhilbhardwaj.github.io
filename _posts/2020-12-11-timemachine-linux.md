@@ -27,7 +27,7 @@ Whenever we're building any system, there are trade-offs and our homebrew backup
 I don't make this trade-off decision lightly, but given my workflow, all the code that I'm working on is committed nightly if not sooner to a personal branch on the Git Remote. My architectural diagrams and wiki contributions are online, interpersonal communication is over email and Slack and that data is automatically backed up.
 
 
-![](assets/uploads/2020/2020-12-11-backup-strategy.png)
+![](/assets/uploads/2020/2020-12-11-backup-strategy.png)
 
 The main components of this system are the home server that I run on my own network. The hardware is an i5 intel NUC board with a SSD and 16 GB of Ram, this server does a few more things other than just backups. I have 3 external hard drives attached (totalling 7 TB of storage space) for providing me network storage and obviously for backups. This also runs a timemachine server to backup my macs to.
 
