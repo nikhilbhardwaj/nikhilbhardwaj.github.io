@@ -20,6 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.nikhilbhardwaj.in" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  nikhilbhardwaj
+linkedin_username: bhardwaj-nikhil
 github: [metadata]
 theme: jekyll-swiss
 theme_color: orange
